@@ -1,0 +1,41 @@
+root {
+	color-scheme: light dark;
+	font-family: sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h1 {
+	text-align:center;
+}
+
+a {
+	font-size: 3em;
+	padding: 0.2em;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		background: black;
+		color: white;
+	}
+	
+	.github {
+	fill: white;
+}
+}
+
+  .facebook {fill: blue}
+
+.avatar {
+	display: block;
+	margin: 1em auto;
+	max-width: 10em;
+	height: 10em;
+}
+
+.contact {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
