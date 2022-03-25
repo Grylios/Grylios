@@ -1,4 +1,4 @@
-root {
+:root {
 	color-scheme: light dark;
 	font-family: sans-serif;
 	margin-left: 20px;
@@ -25,14 +25,25 @@ a {
 }
 }
 
-  .facebook {fill: blue}
+  .facebook {
+	  fill: blue
+  }
 
 .avatar {
-	display: block;
-	margin: 1em auto;
-	max-width: 10em;
-	height: 10em;
-}
+	  display: block;
+	  margin: 1em auto;
+	  max-width: 10em;
+	  height: auto;
+	  border-radius: 50%;
+	  object-fit: scale-down;
+  }
+  
+  /* Fit entire avatar on really small screens */
+  @media (max-width: 600px) {
+	  img {
+		width: 100%;
+	  }
+	}
 
 .contact {
 	display: flex;
