@@ -10,7 +10,7 @@ h1 {
 }
 
 a {
-	font-size: 3em;
+	font-size: 5em;
 	padding: 0.2em;
 }
 
@@ -24,10 +24,6 @@ a {
 	fill: white;
 }
 }
-
-  .facebook {
-	  fill: blue
-  }
 
 .avatar {
 	  display: block;
