@@ -1,17 +1,16 @@
 :root {
 	color-scheme: light dark;
 	font-family: sans-serif;
-	margin-left: 20px;
-	margin-right: 20px;
 }
 
 h1 {
 	text-align: center;
+	font-size: 5vh;
 }
 
 a {
-	font-size: 5em;
-	padding: 0.2em;
+	font-size: 10vh;
+	margin: 0.1em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,18 +27,18 @@ a {
 .avatar {
 	  display: block;
 	  margin: 1em auto;
-	  max-width: 10em;
+	  max-width: 30vh;
 	  height: auto;
 	  border-radius: 50%;
 	  object-fit: scale-down;
-  }
+}
   
   /* Fit entire avatar on really small screens */
-  @media (max-width: 600px) {
-	  img {
+@media (max-width: 600px) {
+	img {
 		width: 100%;
-	  }
 	}
+}
 
 .contact {
 	display: flex;
