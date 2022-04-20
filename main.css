@@ -3,7 +3,7 @@
 	font-family: sans-serif;
 	max-width: 900px; 
 	padding: 12px;
-        margin: auto;
+    margin: auto;
 	font-size: 1.10em;
 	text-align: justify;
 }
@@ -13,17 +13,14 @@ h1 {
 	font-size: 5vh;
 }
 
-h2 {text-align: center;  font-size:4vh;}
-
-
+h2 {
+	text-align: center;
+	font-size: 4vh;}
 
 a { 
 	font-size: 10vh;
 	margin: 0.1em;
 }
-
-
-
 
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -37,12 +34,12 @@ a {
 }
 
 .avatar {
-	  display: block;
-	  margin: 1em auto;
-	  max-width: 30vh;
-	  height: auto;
-	  border-radius: 50%;
-	  object-fit: scale-down;
+	display: block;
+	margin: 1em auto;
+	max-width: 30vh;
+	height: auto;
+	border-radius: 50%;
+	object-fit: scale-down;
 }
   
   /* Fit entire avatar on really small screens */
