@@ -3,6 +3,7 @@
 	font-family: sans-serif;
     margin: auto;
 	text-align: justify;
+	max-width: 900px;
 }
 
 h1 {
@@ -55,6 +56,11 @@ h2 {
 	border-radius: 50%;
 	object-fit: scale-down;
 }
+
+.ad {
+	font-size: 1.25rem;
+	margin: 0.5rem;
+}
   
   /* Fit entire avatar on really small screens */
 @media (max-width: 600px) {
@@ -70,8 +76,4 @@ h2 {
 	.contact-link {
 		font-size: 1.7rem;
 	}
-}
-
-.ad {
-	font-size: 1.25rem;
 }
