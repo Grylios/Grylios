@@ -1,8 +1,6 @@
 :root {
 	color-scheme: light dark;
 	font-family: sans-serif;
-	max-width: 900px; 
-	padding: 12px;
     margin: auto;
 	text-align: justify;
 }
@@ -20,9 +18,22 @@ h2 {
 	margin: 0.5rem;
 }
 
-a { 
-	font-size: 4rem;
-	margin: 0.1em;
+.contact {
+	max-width: 700px;
+	grid-gap: .4rem;
+	display: grid;
+	margin: 1em auto;
+	grid-template-columns: auto auto auto;
+}
+
+.contact-link {
+	font-size: 2.25rem;
+	text-decoration: none;
+	color: black;
+}
+
+.contact-link svg {
+	padding-right: .3rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,12 +61,15 @@ a {
 	img {
 		width: 100%;
 	}
-}
-
-.contact {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	
+	.contact {
+		grid-template-columns: repeat(2, auto);
+		margin: 1rem 0;
+	}
+	
+	.contact-link {
+		font-size: 1.7rem;
+	}
 }
 
 .ad {
