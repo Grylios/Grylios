@@ -1,3 +1,4 @@
+/* Properties for the entire site */
 :root {
 	color-scheme: light dark;
 	font-family: sans-serif;
@@ -6,19 +7,24 @@
 	max-width: 900px;
 }
 
-h1 {
+/* Center and add margins to all headings */
+h1, h2 {
 	text-align: center;
-	font-size: 3rem;
 	margin: 0.5rem;
+}
+
+h1 {
+	font-size: 3rem;
 	margin-top: 1.2rem;
 }
 
 h2 {
 	text-align: center;
 	font-size: 2.5rem;
-	margin: 0.5rem;
 }
 
+
+/* Properties for the entire contact section */
 .contact {
 	max-width: 700px;
 	grid-gap: .4rem;
@@ -27,25 +33,16 @@ h2 {
 	grid-template-columns: repeat(3, auto);
 }
 
+/* Properties for each individual contact link */
 .contact-link {
 	font-size: 2.25rem;
 	text-decoration: none;
 	color: black;
 }
 
+/* Properties for the icon inside of each contact links */
 .contact-link svg {
 	padding-right: .3rem;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		background: black;
-		color: white;
-	}
-	
-	.github {
-	fill: white;
-}
 }
 
 .avatar {
@@ -61,8 +58,21 @@ h2 {
 	font-size: 1.25rem;
 	margin: 0.5rem;
 }
+
+
+/* Specify colors for dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		background: black;
+		color: white;
+	}
+	
+	.github {
+	fill: white;
+}
+}
   
-  /* Fit entire avatar on really small screens */
+/* Properties for devices with screen width of 600px or lower */
 @media (max-width: 600px) {
 	img {
 		width: 100%;
